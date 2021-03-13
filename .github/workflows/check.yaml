@@ -26,6 +26,7 @@ jobs:
       - name: Check latest patch
         id: check
         run: |
+          set -x
           next_patch=$(( $CURRENT_AT_PATCH + 1 ))
           http_status=$(curl -s -o /dev/null -I -w "%{http_code}" "https://ambermd.org/bugfixes/AmberTools/$CURRENT_AT_VERSION/update.$next_patch")
           if [[ $http_status == 200 ]]; then
@@ -33,6 +34,7 @@ jobs:
             echo "::set-output name=next_patch::$next_patch"
           fi
 
+      - uses: actions/checkout@v2
       - uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
