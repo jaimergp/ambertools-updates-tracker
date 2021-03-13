@@ -19,8 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     name: AmberTools
     env:
-      CURRENT_AT_VERSION: 20.0
-      CURRENT_AT_PATCH: 14
+      CURRENT_AT_VERSION: "20.0"
+      CURRENT_AT_PATCH: "14"
 
     steps:
       - name: Check latest patch
