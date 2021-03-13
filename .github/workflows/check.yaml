@@ -35,5 +35,5 @@ jobs:
 
       - uses: JasonEtco/create-an-issue@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
-          NEW_AT_PATCH: ${{ steps.check.outputs.next_patch }}"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NEW_AT_PATCH: ${{ steps.check.outputs.next_patch }}
