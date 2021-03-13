@@ -1,5 +1,5 @@
 ---
-title: New patch version {{ env.NEW_AT_PATCH }} available for AmberTools {{ env.CURRENT_AT_VERSION }}
+title: New patch version available for AmberTools
 assignees: jaimergp
 ---
 
