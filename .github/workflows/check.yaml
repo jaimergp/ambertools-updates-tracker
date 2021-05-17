@@ -11,7 +11,7 @@ on:
     # Nightly tests run on master by default:
     #   Scheduled workflows run on the latest commit on the default or base branch.
     #   (from https://help.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events-schedule)
-    - cron: "6 0 * * *"
+    - cron: "6 0 */3 * *"
 
 
 jobs:
@@ -19,8 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     name: AmberTools
     env:
-      CURRENT_AT_VERSION: "21.0"
-      CURRENT_AT_PATCH: "0"
+      CURRENT_AT_VERSION: "21.1"
+      CURRENT_AT_PATCH: "1"
 
     steps:
       - name: Check latest patch
