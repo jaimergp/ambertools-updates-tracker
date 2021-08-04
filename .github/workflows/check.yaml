@@ -13,14 +13,13 @@ on:
     #   (from https://help.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events-schedule)
     - cron: "6 0 */3 * *"
 
-
 jobs:
   at20:
     runs-on: ubuntu-latest
     name: AmberTools
     env:
       CURRENT_AT_VERSION: "21"
-      CURRENT_AT_PATCH: "5"
+      CURRENT_AT_PATCH: "6"
 
     steps:
       - name: Check latest patch
