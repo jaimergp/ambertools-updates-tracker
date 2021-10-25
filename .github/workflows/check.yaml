@@ -19,7 +19,7 @@ jobs:
     name: AmberTools
     env:
       CURRENT_AT_VERSION: "21"
-      CURRENT_AT_PATCH: "10"
+      CURRENT_AT_PATCH: "11"
 
     steps:
       - name: Check latest patch
